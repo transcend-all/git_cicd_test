@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-VERSION = "1.0.0"
+VERSION = "1.2.0"
 
 @app.get("/")
 def home():
@@ -23,4 +23,4 @@ def dev2():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8111, log_level="info")
+    uvicorn.run(app, host="0.0.0.0", port=8111, log_level="info")
