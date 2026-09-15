@@ -16,6 +16,10 @@ def home():
 def health():
     return {"status": "healthy"}    
 
+@app.get("/dev1")
+def dev1():
+    return {"status": "dev1"}    
+
 
 if __name__ == "__main__":
     import uvicorn
