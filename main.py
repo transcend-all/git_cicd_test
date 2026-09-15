@@ -14,7 +14,11 @@ def home():
 
 @app.get("/health")
 def health():
-    return {"status": "healthy"}    
+    return {"status": "healthy"}
+
+@app.get("/dev2")
+def dev2():
+    return {"status": "dev2 - dev3 modified"}  
 
 @app.get("/dev3")
 def dev3():
