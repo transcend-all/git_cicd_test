@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 
 @app.get("/")
 def home():
