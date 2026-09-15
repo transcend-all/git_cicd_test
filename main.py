@@ -16,9 +16,9 @@ def home():
 def health():
     return {"status": "healthy"}    
 
-@app.get("/dev2")
-def dev2():
-    return {"status": "dev2"}    
+@app.get("/dev3")
+def dev3():
+    return {"status": "dev3"}    
 
 
 if __name__ == "__main__":
