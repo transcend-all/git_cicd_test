@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-VERSION = "1.1.0"
+VERSION = "2.0.0"
 
 @app.get("/")
 def home():
@@ -23,6 +23,10 @@ def dev2234523():
 @app.get("/dev3")
 def dev3():
     return {"status": "dev3"}    
+
+@app.get("/dev4")
+def dev4():
+    return {"status": "dev4"} 
 
 
 if __name__ == "__main__":
